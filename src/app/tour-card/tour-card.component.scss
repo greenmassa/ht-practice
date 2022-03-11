@@ -1,0 +1,225 @@
+.card { 
+        position: relative;
+        border-radius: 3px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(221, 221, 221);
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 3px 8px 0px rgba(0, 14, 11, 0.14);  
+        height: 870px;
+        .card-image-area {
+                margin: 22px 22px 0 22px;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                height: 560px;
+                .recommend {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: row;
+                        border-radius: 4px;
+                        background-color: rgb(82, 186, 80);
+                        position: absolute;
+                        right: 36px;
+                        top: 417px;
+                        width: 277px;
+                        height: 61px;
+                        padding: 0 2px;
+                        .thumbup {
+                                margin-bottom: 4px;
+                                width: 28px;
+                                height: 33px;
+                                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='28px' height='33px'%3E%3Cpath fill-rule='evenodd' fill='rgb(255, 255, 255)' d='M27.409,21.688 C27.409,22.721 26.598,23.566 25.607,23.566 C26.598,23.566 27.409,24.411 27.409,25.443 C27.409,26.476 26.598,27.321 25.607,27.321 L23.805,27.321 C24.800,27.321 25.607,28.161 25.607,29.198 C25.607,30.235 24.800,31.075 23.805,31.075 L15.355,31.075 C14.382,31.075 13.427,30.906 12.508,30.587 L9.392,29.509 L9.392,15.926 C12.908,15.086 14.302,10.937 15.193,7.320 C15.283,6.889 15.716,6.607 16.058,6.607 L16.599,6.607 C18.072,6.607 19.301,7.861 19.301,9.423 C19.301,11.526 19.319,12.621 18.220,16.057 L25.607,16.057 C26.598,16.057 27.409,16.901 27.409,17.934 C27.409,18.967 26.598,19.811 25.607,19.811 C26.598,19.811 27.409,20.656 27.409,21.688 ZM21.695,6.379 C21.343,6.746 20.773,6.746 20.421,6.379 C20.069,6.012 20.069,5.418 20.421,5.051 L21.695,3.724 C22.047,3.358 22.617,3.358 22.969,3.724 C23.320,4.091 23.320,4.685 22.969,5.051 L21.695,6.379 ZM16.599,4.730 C16.094,4.730 15.698,4.317 15.698,3.791 L15.698,1.851 C15.698,1.325 16.094,0.913 16.599,0.913 C17.103,0.913 17.499,1.325 17.499,1.851 L17.499,3.791 C17.499,4.317 17.103,4.730 16.599,4.730 ZM11.502,6.379 L10.228,5.051 C9.877,4.685 9.877,4.091 10.228,3.724 C10.580,3.358 11.150,3.358 11.502,3.724 L12.776,5.051 C13.128,5.418 13.128,6.012 12.776,6.379 C12.424,6.746 11.854,6.746 11.502,6.379 ZM4.887,32.953 L1.284,32.953 C0.786,32.953 0.383,32.533 0.383,32.014 L0.383,15.118 C0.383,14.599 0.786,14.179 1.284,14.179 L4.887,14.179 C6.378,14.179 7.590,15.442 7.590,16.995 L7.590,30.137 C7.590,31.690 6.378,32.953 4.887,32.953 ZM4.887,27.321 C4.390,27.321 3.987,27.741 3.987,28.260 C3.987,28.778 4.390,29.198 4.887,29.198 C5.385,29.198 5.788,28.778 5.788,28.260 C5.788,27.741 5.385,27.321 4.887,27.321 Z'/%3E%3C/svg%3E");
+                        }
+                        .text {
+                                margin-left: 12px;
+                                font-size: 22px;
+                                font-family: "Gotham Pro";
+                                color: rgb(255, 255, 255);
+                                text-transform: uppercase;
+                                text-align: center;
+                                text-decoration: none;
+                        }
+                }
+                .card-image {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: 430px;
+                        background: url("./../../assets/images/pic.png") center center;
+                        .top-block {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                .rating {
+                                        font-size: 26px;
+                                        font-family: "Gotham Pro";
+                                        color: rgb(255, 255, 255);
+                                        line-height: 1.347;
+                                        margin: 25px;
+                                        border-radius: 28px;
+                                        background-color: rgb(82, 186, 80);
+                                        width: 152px;
+                                        height: 57px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                }
+                                .discount {
+                                        margin-top: 24px;
+                                        margin-right: 16px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        border-radius: 4px;
+                                        background-color: rgb(218, 39, 52);
+                                        width: 101px;
+                                        height: 59px;
+                                        font-size: 34.786px;
+                                        font-family: "Gotham Pro";
+                                        color: rgb(255, 255, 255);
+                                        text-transform: uppercase;        
+                                }
+                        }
+                        .bot-block {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: flex-end;
+                                align-items: start;
+                                margin: 35px 30px;
+                                .card-title {
+                                        font-size: 32px;
+                                        font-family: "Gotham Pro";
+                                        color: rgb(255, 255, 255);
+                                        text-align: left;
+                                        line-height: 1.1;
+                                        margin-bottom: 18px;
+                                }
+                                .destination {
+                                        font-size: 26px;
+                                        font-family: "Gotham Pro";
+                                        color: rgba(255, 255, 255, 0.82);
+                                        text-align: left;
+                                        font-weight: 200;
+                                        margin-bottom: 1px;
+                                }
+                                .rating-star {
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: start;
+                                        margin-bottom: 18px;
+                                }
+                        }
+                        
+                }
+
+        }
+        .days-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                height: 130px;
+                .days-range {
+                        font-size: 32px;
+                        font-family: "Gotham Pro";
+                        color: rgb(51, 51, 51);
+                        text-align: left;
+                }
+                .flight-range {
+                        font-size: 32px;
+                        font-family: "Gotham Pro";
+                        color: rgb(51, 51, 51);
+                }
+        }
+        .line {
+                border-bottom: 2px solid #e7e7e7; /* Параметры линии */
+               }
+        .bot-card {
+                height: 286px;
+                background-color: rgb(255, 255, 255);
+                .price {
+                        display: flex;
+                        flex-direction: row;
+                        .full-price {
+                                display: flex;
+                                flex-direction: column;
+                                padding: 30px;
+                                width: 62.5%;
+                                height: 100px;
+                                border-right: 2px solid #e7e7e7;
+                                .people-option {
+                                        display: flex;
+                                        flex-direction: row;
+                                        font-family: "Gotham Pro";
+                                        font-size: 32px;
+                                        a {
+                                                color: #0751f8;
+                                                text-decoration: none;
+                                                border-bottom: 2px solid #0751f8;
+                                                padding-bottom: 3px;
+                                        }
+                                        .people-option-icon {
+                                                margin: 15px;
+                                                width: 13px;
+                                                height: 9px;
+                                                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='13px' height='9px'%3E%3Cpath fill-rule='evenodd' opacity='0.8' fill='rgb(0, 0, 0)' d='M6.756,8.875 L12.948,0.455 C13.013,0.366 13.020,0.251 12.967,0.156 C12.913,0.060 12.808,-0.000 12.693,-0.000 L0.309,-0.000 C0.194,-0.000 0.089,0.060 0.035,0.156 C0.011,0.197 -0.000,0.244 -0.000,0.290 C-0.000,0.348 0.018,0.406 0.054,0.455 L6.246,8.875 C6.304,8.953 6.399,9.000 6.501,9.000 C6.603,9.000 6.698,8.953 6.756,8.875 Z'/%3E%3C/svg%3E");
+                                        }
+                                }
+                                .price-from {
+                                        margin-top: 20px;
+                                        font-family: "Gotham Pro";
+                                        font-size: 48px;
+                                }
+
+                        }
+                        .price-loan {
+                                padding: 25px;
+                                width: 37.5%;
+                                height: 100px;
+                                font-family: "Gotham Pro";
+                                .per-month-price {
+                                        font-size: 34px;
+                                        color: #fff;
+                                        border-radius: 4px;
+                                        background-color: rgb(216, 9, 25);
+                                        width: 224px;
+                                        height: 68px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                }
+                                .months-number {
+                                        margin-top: 7px;
+                                        font-size: 30px;
+                                }
+                        }
+                }
+        }
+        .btn-show-tours {
+                font-family: "Gotham Pro";
+                font-size: 42px;
+                width: 100%;
+                height: 122px;
+                border: none;
+                background-color: rgb(254, 218, 102);
+                box-shadow: 0px 2px 0px 0px rgba(244, 205, 78, 0.004);  
+                .text {
+                        text-decoration: none;
+                        border-bottom: 3px solid #000;
+                        padding-bottom: 3px;
+                }
+        }
+}
+
+
+        .fstar {
+                width: 35px;
+                height: 32px;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='35px' height='32px'%3E%3Cpath fill-rule='evenodd' fill='rgb(254, 201, 68)' d='M34.354,12.178 C34.283,11.960 34.093,11.801 33.865,11.768 L22.922,10.188 L18.028,0.332 C17.927,0.126 17.716,-0.004 17.486,-0.004 C17.256,-0.004 17.045,0.126 16.944,0.332 L12.050,10.188 L1.106,11.769 C0.878,11.802 0.690,11.960 0.617,12.178 C0.547,12.395 0.605,12.635 0.771,12.794 L8.690,20.466 L6.820,31.299 C6.781,31.525 6.874,31.753 7.060,31.887 C7.247,32.023 7.494,32.041 7.697,31.933 L17.486,26.819 L27.274,31.933 C27.362,31.979 27.460,32.002 27.556,32.002 C27.681,32.002 27.806,31.964 27.912,31.887 C28.098,31.753 28.191,31.525 28.152,31.299 L26.283,20.467 L34.202,12.794 C34.366,12.633 34.426,12.395 34.354,12.178 Z'/%3E%3C/svg%3E"); 
+        }
+        .estar {
+                width: 35px;
+                height: 32px;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='35px' height='32px'%3E%3Cpath fill-rule='evenodd' fill='rgb(254, 238, 194)' d='M34.605,12.178 C34.534,11.960 34.345,11.801 34.116,11.768 L23.173,10.188 L18.279,0.332 C18.178,0.126 17.967,-0.004 17.737,-0.004 C17.507,-0.004 17.296,0.126 17.195,0.332 L12.300,10.188 L1.357,11.769 C1.129,11.802 0.940,11.960 0.868,12.178 C0.798,12.395 0.856,12.635 1.022,12.794 L8.941,20.466 L7.071,31.299 C7.032,31.525 7.125,31.753 7.311,31.887 C7.498,32.023 7.746,32.041 7.948,31.933 L17.737,26.819 L27.525,31.933 C27.613,31.979 27.710,32.002 27.807,32.002 C27.932,32.002 28.057,31.964 28.163,31.887 C28.349,31.753 28.442,31.525 28.403,31.299 L26.534,20.467 L34.453,12.794 C34.617,12.633 34.677,12.395 34.605,12.178 Z'/%3E%3C/svg%3E");
+        }
